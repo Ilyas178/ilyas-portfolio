@@ -6,6 +6,10 @@
     <meta name="description" content="Professional WordPress & Elementor Developer - Modern, Fast, Responsive Websites">
     <title>Ilyas - WordPress & Elementor Developer</title>
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%239333ea;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%233b82f6;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='url(%23grad)'/%3E%3Ctext x='50' y='70' font-size='60' font-weight='bold' text-anchor='middle' fill='white' font-family='Arial, sans-serif'%3EI%3C/text%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%239333ea;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%233b82f6;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='url(%23grad)'/%3E%3Ctext x='50' y='70' font-size='60' font-weight='bold' text-anchor='middle' fill='white' font-family='Arial, sans-serif'%3EI%3C/text%3E%3C/svg%3E">
+    
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -60,53 +64,51 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 via-white to-blue-50 pt-20">
-        <div class="container mx-auto px-4 py-20">
+    <section id="home" class="min-h-[85vh] flex items-center justify-center bg-gradient-to-br from-purple-50 via-white to-blue-50 pt-20">
+        <div class="container mx-auto px-4 py-8 md:py-12">
             <div class="text-center max-w-4xl mx-auto">
                 <div class="hero-content">
-                    <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600 bg-clip-text text-transparent animate-gradient">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4 md:mb-5 bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600 bg-clip-text text-transparent animate-gradient">
                         Hi, I'm a <span class="text-purple-600">WordPress Developer</span>
                     </h1>
-                    <p class="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
+                    <p class="text-lg md:text-xl text-gray-600 mb-4 md:mb-5 leading-relaxed">
                         I create modern, fully responsive, and high-converting websites using WordPress, Elementor, WooCommerce, and custom CSS.
                     </p>
-                    <p class="text-lg text-gray-500 mb-12 max-w-2xl mx-auto">
+                    <p class="text-base md:text-lg text-gray-500 mb-6 md:mb-8 max-w-2xl mx-auto">
                         My focus is simple: clean UI, fast loading speed, and a seamless user experience that helps your business grow.
                     </p>
                     
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 max-w-3xl mx-auto">
-                        <div class="feature-badge bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all">
-                            <i class="fas fa-bolt text-3xl text-yellow-500 mb-2"></i>
-                            <p class="font-semibold text-gray-800">Fast Delivery</p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-6 md:mb-8 max-w-3xl mx-auto">
+                        <div class="feature-badge bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all text-center">
+                            <i class="fas fa-shipping-fast text-3xl text-yellow-500 mb-2"></i>
+                            <p class="font-semibold text-gray-800 text-sm">Fast Delivery</p>
                         </div>
-                        <div class="feature-badge bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all">
-                            <i class="fas fa-palette text-3xl text-purple-500 mb-2"></i>
-                            <p class="font-semibold text-gray-800">Pixel-Perfect</p>
+                        <div class="feature-badge bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all text-center">
+                            <i class="fas fa-ruler-combined text-3xl text-purple-500 mb-2"></i>
+                            <p class="font-semibold text-gray-800 text-sm">Pixel-Perfect</p>
                         </div>
-                        <div class="feature-badge bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all">
+                        <div class="feature-badge bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all text-center">
                             <i class="fas fa-mobile-alt text-3xl text-blue-500 mb-2"></i>
-                            <p class="font-semibold text-gray-800">Responsive</p>
+                            <p class="font-semibold text-gray-800 text-sm">Responsive</p>
                         </div>
-                        <div class="feature-badge bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all">
-                            <i class="fas fa-search text-3xl text-green-500 mb-2"></i>
-                            <p class="font-semibold text-gray-800">SEO-Friendly</p>
+                        <div class="feature-badge bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all text-center">
+                            <i class="fas fa-chart-line text-3xl text-green-500 mb-2"></i>
+                            <p class="font-semibold text-gray-800 text-sm">SEO-Friendly</p>
                         </div>
                     </div>
                     
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="#contact" class="btn-primary px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-full font-semibold hover:shadow-2xl hover:scale-105 transition-all">
+                    <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center mt-4">
+                        <a href="#contact" class="btn-primary px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-full font-semibold hover:shadow-2xl hover:scale-105 transition-all text-sm md:text-base">
                             Let's Work Together
                         </a>
-                        <a href="#portfolio" class="btn-secondary px-8 py-4 bg-white text-purple-600 border-2 border-purple-600 rounded-full font-semibold hover:bg-purple-50 transition-all">
+                        <a href="#portfolio" class="btn-secondary px-6 md:px-8 py-3 md:py-4 bg-white text-purple-600 border-2 border-purple-600 rounded-full font-semibold hover:bg-purple-50 transition-all text-sm md:text-base">
                             View My Work
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <i class="fas fa-chevron-down text-gray-400 text-2xl"></i>
-        </div>
+    
     </section>
 
     <!-- About Me Section -->
@@ -115,7 +117,7 @@
             <div class="text-center mb-16">
                 <div class="flex items-center justify-center mb-4">
                     <i class="fas fa-user-tie text-5xl text-purple-600 mr-4"></i>
-                    <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900">
                         About Me
                     </h2>
                 </div>
@@ -125,10 +127,10 @@
             <div class="max-w-6xl mx-auto">
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div class="about-content">
-                        <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                            I'm a professional <strong class="text-purple-600">WordPress & Elementor Developer</strong> with hands-on experience building fast, secure, and visually stunning websites for clients worldwide.
+                        <p class="text-lg text-gray-800 mb-6 leading-relaxed">
+                            I'm a professional <strong class="text-purple-600 font-bold">WordPress & Elementor Developer</strong> with hands-on experience building fast, secure, and visually stunning websites for clients worldwide.
                         </p>
-                        <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        <p class="text-lg text-gray-800 mb-8 leading-relaxed">
                             My mission: Deliver clean, modern, and high-quality websites that make your brand stand out online.
                         </p>
                         
@@ -137,27 +139,27 @@
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div class="flex items-center space-x-3">
                                     <i class="fas fa-check-circle text-green-500 text-xl"></i>
-                                    <span class="text-gray-700">WordPress Website Development</span>
+                                    <span class="text-gray-800 font-medium">WordPress Website Development</span>
                                 </div>
                                 <div class="flex items-center space-x-3">
                                     <i class="fas fa-check-circle text-green-500 text-xl"></i>
-                                    <span class="text-gray-700">Elementor Custom Page Building</span>
+                                    <span class="text-gray-800 font-medium">Elementor Custom Page Building</span>
                                 </div>
                                 <div class="flex items-center space-x-3">
                                     <i class="fas fa-check-circle text-green-500 text-xl"></i>
-                                    <span class="text-gray-700">WooCommerce Store Setup</span>
+                                    <span class="text-gray-800 font-medium">WooCommerce Store Setup</span>
                                 </div>
                                 <div class="flex items-center space-x-3">
                                     <i class="fas fa-check-circle text-green-500 text-xl"></i>
-                                    <span class="text-gray-700">Website Fixes & Redesigns</span>
+                                    <span class="text-gray-800 font-medium">Website Fixes & Redesigns</span>
                                 </div>
                                 <div class="flex items-center space-x-3">
                                     <i class="fas fa-check-circle text-green-500 text-xl"></i>
-                                    <span class="text-gray-700">Speed Optimization</span>
+                                    <span class="text-gray-800 font-medium">Speed Optimization</span>
                                 </div>
                                 <div class="flex items-center space-x-3">
                                     <i class="fas fa-check-circle text-green-500 text-xl"></i>
-                                    <span class="text-gray-700">Custom CSS for premium finishing</span>
+                                    <span class="text-gray-800 font-medium">Custom CSS for premium finishing</span>
                                 </div>
                             </div>
                         </div>
@@ -168,19 +170,19 @@
                             <div class="grid grid-cols-2 gap-4">
                                 <div class="stat-card bg-white p-6 rounded-xl shadow-md text-center">
                                     <div class="text-4xl font-bold text-purple-600 mb-2 counter" data-target="50">0</div>
-                                    <div class="text-gray-600">Projects Done</div>
+                                    <div class="text-gray-800 font-semibold">Projects Done</div>
                                 </div>
                                 <div class="stat-card bg-white p-6 rounded-xl shadow-md text-center">
                                     <div class="text-4xl font-bold text-blue-600 mb-2 counter" data-target="100">0</div>
-                                    <div class="text-gray-600">% Satisfaction</div>
+                                    <div class="text-gray-800 font-semibold">% Satisfaction</div>
                                 </div>
                                 <div class="stat-card bg-white p-6 rounded-xl shadow-md text-center">
                                     <div class="text-4xl font-bold text-green-600 mb-2 counter" data-target="5">0</div>
-                                    <div class="text-gray-600">Years Experience</div>
+                                    <div class="text-gray-800 font-semibold">Years Experience</div>
                                 </div>
                                 <div class="stat-card bg-white p-6 rounded-xl shadow-md text-center">
                                     <div class="text-4xl font-bold text-orange-600 mb-2 counter" data-target="30">0</div>
-                                    <div class="text-gray-600">Happy Clients</div>
+                                    <div class="text-gray-800 font-semibold">Happy Clients</div>
                                 </div>
                             </div>
                         </div>
@@ -303,72 +305,280 @@
             </div>
             
             <div class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Portfolio Item 1 -->
-                <div class="portfolio-item" data-category="landing">
-                    <div class="bg-gradient-to-br from-purple-100 to-blue-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2">
-                        <div class="h-64 bg-gradient-to-br from-purple-400 to-blue-400 flex items-center justify-center">
-                            <i class="fas fa-laptop-code text-white text-6xl"></i>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-2xl font-bold mb-2 text-gray-800">Digital Agency Landing Page</h3>
-                            <p class="text-gray-600 mb-4">Modern UI, animations, responsive design</p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">WordPress</span>
-                                <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Elementor</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Portfolio Item 2 -->
-                <div class="portfolio-item" data-category="ecommerce">
-                    <div class="bg-gradient-to-br from-green-100 to-emerald-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2">
-                        <div class="h-64 bg-gradient-to-br from-green-400 to-emerald-400 flex items-center justify-center">
-                            <i class="fas fa-shopping-bag text-white text-6xl"></i>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-2xl font-bold mb-2 text-gray-800">E-Commerce Store (Clothing Brand)</h3>
-                            <p class="text-gray-600 mb-4">Filters, cart, checkout functionality</p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">WooCommerce</span>
-                                <span class="px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-sm">Custom CSS</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Portfolio Item 3 -->
+                <!-- Portfolio Item 1 - Loyal Tree -->
                 <div class="portfolio-item" data-category="business">
-                    <div class="bg-gradient-to-br from-orange-100 to-red-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2">
-                        <div class="h-64 bg-gradient-to-br from-orange-400 to-red-400 flex items-center justify-center">
-                            <i class="fas fa-plane text-white text-6xl"></i>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-2xl font-bold mb-2 text-gray-800">Travel Agency Website</h3>
-                            <p class="text-gray-600 mb-4">Clean design, gallery, booking form</p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm">WordPress</span>
-                                <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm">Elementor</span>
+                    <a href="https://loyaltree.ca/" target="_blank" rel="noopener noreferrer" class="block">
+                        <div class="bg-gradient-to-br from-purple-100 to-blue-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 h-full">
+                            <div class="h-64 bg-gradient-to-br from-purple-400 to-blue-400 flex items-center justify-center">
+                                <i class="fas fa-tree text-white text-6xl"></i>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold mb-2 text-gray-800">Loyal Tree</h3>
+                                <p class="text-gray-600 mb-4">Professional business website with modern design</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">WordPress</span>
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Elementor</span>
+                                </div>
+                                <div class="text-purple-600 font-semibold flex items-center">
+                                    <span>Visit Website</span>
+                                    <i class="fas fa-external-link-alt ml-2"></i>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 
-                <!-- Portfolio Item 4 -->
-                <div class="portfolio-item" data-category="landing">
-                    <div class="bg-gradient-to-br from-pink-100 to-purple-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2">
-                        <div class="h-64 bg-gradient-to-br from-pink-400 to-purple-400 flex items-center justify-center">
-                            <i class="fas fa-briefcase text-white text-6xl"></i>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-2xl font-bold mb-2 text-gray-800">One-Page Portfolio</h3>
-                            <p class="text-gray-600 mb-4">Minimal, elegant, fast loading</p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-pink-100 text-pink-700 rounded-full text-sm">WordPress</span>
-                                <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Custom Design</span>
+                <!-- Portfolio Item 2 - LB Car Service -->
+                <div class="portfolio-item" data-category="business">
+                    <a href="https://lbcarservice.net/" target="_blank" rel="noopener noreferrer" class="block">
+                        <div class="bg-gradient-to-br from-blue-100 to-cyan-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 h-full">
+                            <div class="h-64 bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center">
+                                <i class="fas fa-car text-white text-6xl"></i>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold mb-2 text-gray-800">LB Car Service</h3>
+                                <p class="text-gray-600 mb-4">Automotive service website with booking system</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">WordPress</span>
+                                    <span class="px-3 py-1 bg-cyan-100 text-cyan-700 rounded-full text-sm">Responsive</span>
+                                </div>
+                                <div class="text-blue-600 font-semibold flex items-center">
+                                    <span>Visit Website</span>
+                                    <i class="fas fa-external-link-alt ml-2"></i>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
+                </div>
+                
+                <!-- Portfolio Item 3 - Hotel La Spezia -->
+                <div class="portfolio-item" data-category="business">
+                    <a href="https://hotel-laspezia.it/" target="_blank" rel="noopener noreferrer" class="block">
+                        <div class="bg-gradient-to-br from-orange-100 to-red-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 h-full">
+                            <div class="h-64 bg-gradient-to-br from-orange-400 to-red-400 flex items-center justify-center">
+                                <i class="fas fa-hotel text-white text-6xl"></i>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold mb-2 text-gray-800">Hotel La Spezia</h3>
+                                <p class="text-gray-600 mb-4">Elegant hotel website with booking integration</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm">WordPress</span>
+                                    <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm">Elementor</span>
+                                </div>
+                                <div class="text-orange-600 font-semibold flex items-center">
+                                    <span>Visit Website</span>
+                                    <i class="fas fa-external-link-alt ml-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Portfolio Item 4 - Andy Sells Chicago -->
+                <div class="portfolio-item" data-category="business">
+                    <a href="https://andysellschicago.com/" target="_blank" rel="noopener noreferrer" class="block">
+                        <div class="bg-gradient-to-br from-green-100 to-emerald-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 h-full">
+                            <div class="h-64 bg-gradient-to-br from-green-400 to-emerald-400 flex items-center justify-center">
+                                <i class="fas fa-home text-white text-6xl"></i>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold mb-2 text-gray-800">Andy Sells Chicago</h3>
+                                <p class="text-gray-600 mb-4">Real estate website with property listings</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">WordPress</span>
+                                    <span class="px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-sm">Custom Design</span>
+                                </div>
+                                <div class="text-green-600 font-semibold flex items-center">
+                                    <span>Visit Website</span>
+                                    <i class="fas fa-external-link-alt ml-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Portfolio Item 5 - Koi Wellness Solutions -->
+                <div class="portfolio-item" data-category="business">
+                    <a href="https://koiwellnesssolutions.com/" target="_blank" rel="noopener noreferrer" class="block">
+                        <div class="bg-gradient-to-br from-pink-100 to-rose-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 h-full">
+                            <div class="h-64 bg-gradient-to-br from-pink-400 to-rose-400 flex items-center justify-center">
+                                <i class="fas fa-spa text-white text-6xl"></i>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold mb-2 text-gray-800">Koi Wellness Solutions</h3>
+                                <p class="text-gray-600 mb-4">Wellness & health services website</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-pink-100 text-pink-700 rounded-full text-sm">WordPress</span>
+                                    <span class="px-3 py-1 bg-rose-100 text-rose-700 rounded-full text-sm">Elementor</span>
+                                </div>
+                                <div class="text-pink-600 font-semibold flex items-center">
+                                    <span>Visit Website</span>
+                                    <i class="fas fa-external-link-alt ml-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Portfolio Item 6 - Corporation Capital -->
+                <div class="portfolio-item" data-category="business">
+                    <a href="https://corporationcapital.co.uk/" target="_blank" rel="noopener noreferrer" class="block">
+                        <div class="bg-gradient-to-br from-indigo-100 to-purple-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 h-full">
+                            <div class="h-64 bg-gradient-to-br from-indigo-400 to-purple-400 flex items-center justify-center">
+                                <i class="fas fa-building text-white text-6xl"></i>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold mb-2 text-gray-800">Corporation Capital</h3>
+                                <p class="text-gray-600 mb-4">Financial services corporate website</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">WordPress</span>
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Professional</span>
+                                </div>
+                                <div class="text-indigo-600 font-semibold flex items-center">
+                                    <span>Visit Website</span>
+                                    <i class="fas fa-external-link-alt ml-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Portfolio Item 7 - Capiwise -->
+                <div class="portfolio-item" data-category="business">
+                    <a href="https://capiwise.com/" target="_blank" rel="noopener noreferrer" class="block">
+                        <div class="bg-gradient-to-br from-teal-100 to-cyan-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 h-full">
+                            <div class="h-64 bg-gradient-to-br from-teal-400 to-cyan-400 flex items-center justify-center">
+                                <i class="fas fa-chart-line text-white text-6xl"></i>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold mb-2 text-gray-800">Capiwise</h3>
+                                <p class="text-gray-600 mb-4">Financial consulting & investment website</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-teal-100 text-teal-700 rounded-full text-sm">WordPress</span>
+                                    <span class="px-3 py-1 bg-cyan-100 text-cyan-700 rounded-full text-sm">Elementor</span>
+                                </div>
+                                <div class="text-teal-600 font-semibold flex items-center">
+                                    <span>Visit Website</span>
+                                    <i class="fas fa-external-link-alt ml-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Portfolio Item 8 - Nexus Medical Solutions -->
+                <div class="portfolio-item" data-category="business">
+                    <a href="https://nexusmedicalsolutions.net/" target="_blank" rel="noopener noreferrer" class="block">
+                        <div class="bg-gradient-to-br from-red-100 to-pink-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 h-full">
+                            <div class="h-64 bg-gradient-to-br from-red-400 to-pink-400 flex items-center justify-center">
+                                <i class="fas fa-heartbeat text-white text-6xl"></i>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold mb-2 text-gray-800">Nexus Medical Solutions</h3>
+                                <p class="text-gray-600 mb-4">Medical services & healthcare website</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm">WordPress</span>
+                                    <span class="px-3 py-1 bg-pink-100 text-pink-700 rounded-full text-sm">Medical</span>
+                                </div>
+                                <div class="text-red-600 font-semibold flex items-center">
+                                    <span>Visit Website</span>
+                                    <i class="fas fa-external-link-alt ml-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Portfolio Item 9 - The Home Organizers -->
+                <div class="portfolio-item" data-category="business">
+                    <a href="https://thehomeorganizers.ca/" target="_blank" rel="noopener noreferrer" class="block">
+                        <div class="bg-gradient-to-br from-yellow-100 to-orange-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 h-full">
+                            <div class="h-64 bg-gradient-to-br from-yellow-400 to-orange-400 flex items-center justify-center">
+                                <i class="fas fa-boxes text-white text-6xl"></i>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold mb-2 text-gray-800">The Home Organizers</h3>
+                                <p class="text-gray-600 mb-4">Home organization services website</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-sm">WordPress</span>
+                                    <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm">Service</span>
+                                </div>
+                                <div class="text-yellow-600 font-semibold flex items-center">
+                                    <span>Visit Website</span>
+                                    <i class="fas fa-external-link-alt ml-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Portfolio Item 10 - Stonemate -->
+                <div class="portfolio-item" data-category="ecommerce">
+                    <a href="https://stonemate.co/" target="_blank" rel="noopener noreferrer" class="block">
+                        <div class="bg-gradient-to-br from-gray-100 to-slate-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 h-full">
+                            <div class="h-64 bg-gradient-to-br from-gray-400 to-slate-400 flex items-center justify-center">
+                                <i class="fas fa-shopping-cart text-white text-6xl"></i>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold mb-2 text-gray-800">Stonemate</h3>
+                                <p class="text-gray-600 mb-4">E-commerce store for stone handling equipment</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">WooCommerce</span>
+                                    <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm">E-Commerce</span>
+                                </div>
+                                <div class="text-gray-600 font-semibold flex items-center">
+                                    <span>Visit Website</span>
+                                    <i class="fas fa-external-link-alt ml-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Portfolio Item 11 - Casablanca Odense -->
+                <div class="portfolio-item" data-category="business">
+                    <a href="https://www.casablancaodense.dk/newdesign/" target="_blank" rel="noopener noreferrer" class="block">
+                        <div class="bg-gradient-to-br from-amber-100 to-yellow-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 h-full">
+                            <div class="h-64 bg-gradient-to-br from-amber-400 to-yellow-400 flex items-center justify-center">
+                                <i class="fas fa-coffee text-white text-6xl"></i>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold mb-2 text-gray-800">Casablanca Odense</h3>
+                                <p class="text-gray-600 mb-4">Lounge cafe website with booking system</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm">WordPress</span>
+                                    <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-sm">Cafe</span>
+                                </div>
+                                <div class="text-amber-600 font-semibold flex items-center">
+                                    <span>Visit Website</span>
+                                    <i class="fas fa-external-link-alt ml-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Portfolio Item 12 - Smart Alozie -->
+                <div class="portfolio-item" data-category="landing">
+                    <a href="https://smart-alozie.netlify.app/" target="_blank" rel="noopener noreferrer" class="block">
+                        <div class="bg-gradient-to-br from-violet-100 to-purple-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 h-full">
+                            <div class="h-64 bg-gradient-to-br from-violet-400 to-purple-400 flex items-center justify-center">
+                                <i class="fas fa-rocket text-white text-6xl"></i>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold mb-2 text-gray-800">Smart Alozie</h3>
+                                <p class="text-gray-600 mb-4">Professional landing page with modern design</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-violet-100 text-violet-700 rounded-full text-sm">Landing Page</span>
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Modern UI</span>
+                                </div>
+                                <div class="text-violet-600 font-semibold flex items-center">
+                                    <span>Visit Website</span>
+                                    <i class="fas fa-external-link-alt ml-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -389,35 +599,35 @@
             
             <div class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-xl transition-all">
-                    <i class="fas fa-paint-brush text-4xl text-purple-600 mb-4"></i>
+                    <i class="fas fa-palette text-4xl text-purple-600 mb-4"></i>
                     <h3 class="font-bold text-lg mb-2">Clean & Professional UI</h3>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-xl transition-all">
-                    <i class="fas fa-bolt text-4xl text-yellow-500 mb-4"></i>
+                    <i class="fas fa-tachometer-alt text-4xl text-yellow-500 mb-4"></i>
                     <h3 class="font-bold text-lg mb-2">Fast Loading Speed</h3>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-xl transition-all">
-                    <i class="fas fa-mobile-alt text-4xl text-blue-500 mb-4"></i>
+                    <i class="fas fa-tablet-alt text-4xl text-blue-500 mb-4"></i>
                     <h3 class="font-bold text-lg mb-2">Fully Responsive</h3>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-xl transition-all">
-                    <i class="fas fa-search text-4xl text-green-500 mb-4"></i>
+                    <i class="fas fa-search-plus text-4xl text-green-500 mb-4"></i>
                     <h3 class="font-bold text-lg mb-2">SEO-Friendly Structure</h3>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-xl transition-all">
-                    <i class="fas fa-heart text-4xl text-red-500 mb-4"></i>
+                    <i class="fas fa-thumbs-up text-4xl text-red-500 mb-4"></i>
                     <h3 class="font-bold text-lg mb-2">100% Client Satisfaction</h3>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-xl transition-all">
-                    <i class="fas fa-comments text-4xl text-cyan-500 mb-4"></i>
+                    <i class="fas fa-headset text-4xl text-cyan-500 mb-4"></i>
                     <h3 class="font-bold text-lg mb-2">Clear Communication</h3>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-xl transition-all">
-                    <i class="fas fa-sync-alt text-4xl text-orange-500 mb-4"></i>
+                    <i class="fas fa-redo-alt text-4xl text-orange-500 mb-4"></i>
                     <h3 class="font-bold text-lg mb-2">Unlimited Revisions</h3>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-xl transition-all">
-                    <i class="fas fa-star text-4xl text-yellow-400 mb-4"></i>
+                    <i class="fas fa-award text-4xl text-yellow-400 mb-4"></i>
                     <h3 class="font-bold text-lg mb-2">Premium Quality</h3>
                 </div>
             </div>
@@ -446,59 +656,59 @@
                             <div class="process-number w-20 h-20 bg-gradient-to-br from-purple-600 to-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg flex-shrink-0 relative z-10">
                                 <span class="step-number">1</span>
                             </div>
-                            <div class="process-content flex-1 bg-gray-50 p-6 rounded-xl opacity-0">
+                            <div class="process-content flex-1 bg-gray-50 p-6 rounded-xl">
                                 <h3 class="text-2xl font-bold mb-2 text-gray-800">Understanding your requirements</h3>
                                 <p class="text-gray-600">I listen carefully to understand your business goals and vision.</p>
                             </div>
                             <!-- Connecting Line -->
-                            <div class="process-line hidden md:block absolute left-10 top-20 w-0.5 h-12 bg-gradient-to-b from-purple-600 to-blue-600 opacity-0"></div>
+                            <div class="process-line hidden md:block absolute left-10 top-20 w-0.5 h-12 bg-gradient-to-b from-purple-600 to-blue-600"></div>
                         </div>
                         
                         <!-- Step 2 -->
                         <div class="process-step flex flex-col md:flex-row items-center gap-6 relative">
-                            <div class="process-number w-20 h-20 bg-gradient-to-br from-purple-600 to-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg flex-shrink-0 relative z-10 opacity-0 scale-0">
+                            <div class="process-number w-20 h-20 bg-gradient-to-br from-purple-600 to-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg flex-shrink-0 relative z-10">
                                 <span class="step-number">2</span>
                             </div>
-                            <div class="process-content flex-1 bg-gray-50 p-6 rounded-xl opacity-0">
+                            <div class="process-content flex-1 bg-gray-50 p-6 rounded-xl">
                                 <h3 class="text-2xl font-bold mb-2 text-gray-800">Designing a clean, modern layout</h3>
                                 <p class="text-gray-600">Creating wireframes and designs that match your brand identity.</p>
                             </div>
                             <!-- Connecting Line -->
-                            <div class="process-line hidden md:block absolute left-10 top-20 w-0.5 h-12 bg-gradient-to-b from-purple-600 to-blue-600 opacity-0"></div>
+                            <div class="process-line hidden md:block absolute left-10 top-20 w-0.5 h-12 bg-gradient-to-b from-purple-600 to-blue-600"></div>
                         </div>
                         
                         <!-- Step 3 -->
                         <div class="process-step flex flex-col md:flex-row items-center gap-6 relative">
-                            <div class="process-number w-20 h-20 bg-gradient-to-br from-purple-600 to-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg flex-shrink-0 relative z-10 opacity-0 scale-0">
+                            <div class="process-number w-20 h-20 bg-gradient-to-br from-purple-600 to-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg flex-shrink-0 relative z-10">
                                 <span class="step-number">3</span>
                             </div>
-                            <div class="process-content flex-1 bg-gray-50 p-6 rounded-xl opacity-0">
+                            <div class="process-content flex-1 bg-gray-50 p-6 rounded-xl">
                                 <h3 class="text-2xl font-bold mb-2 text-gray-800">Developing your website in WordPress</h3>
                                 <p class="text-gray-600">Building with clean code, best practices, and modern techniques.</p>
                             </div>
                             <!-- Connecting Line -->
-                            <div class="process-line hidden md:block absolute left-10 top-20 w-0.5 h-12 bg-gradient-to-b from-purple-600 to-blue-600 opacity-0"></div>
+                            <div class="process-line hidden md:block absolute left-10 top-20 w-0.5 h-12 bg-gradient-to-b from-purple-600 to-blue-600"></div>
                         </div>
                         
                         <!-- Step 4 -->
                         <div class="process-step flex flex-col md:flex-row items-center gap-6 relative">
-                            <div class="process-number w-20 h-20 bg-gradient-to-br from-purple-600 to-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg flex-shrink-0 relative z-10 opacity-0 scale-0">
+                            <div class="process-number w-20 h-20 bg-gradient-to-br from-purple-600 to-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg flex-shrink-0 relative z-10">
                                 <span class="step-number">4</span>
                             </div>
-                            <div class="process-content flex-1 bg-gray-50 p-6 rounded-xl opacity-0">
+                            <div class="process-content flex-1 bg-gray-50 p-6 rounded-xl">
                                 <h3 class="text-2xl font-bold mb-2 text-gray-800">Testing on all devices</h3>
                                 <p class="text-gray-600">Ensuring perfect functionality across all devices and browsers.</p>
                             </div>
                             <!-- Connecting Line -->
-                            <div class="process-line hidden md:block absolute left-10 top-20 w-0.5 h-12 bg-gradient-to-b from-purple-600 to-blue-600 opacity-0"></div>
+                            <div class="process-line hidden md:block absolute left-10 top-20 w-0.5 h-12 bg-gradient-to-b from-purple-600 to-blue-600"></div>
                         </div>
                         
                         <!-- Step 5 -->
                         <div class="process-step flex flex-col md:flex-row items-center gap-6 relative">
-                            <div class="process-number w-20 h-20 bg-gradient-to-br from-purple-600 to-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg flex-shrink-0 relative z-10 opacity-0 scale-0">
+                            <div class="process-number w-20 h-20 bg-gradient-to-br from-purple-600 to-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg flex-shrink-0 relative z-10">
                                 <span class="step-number">5</span>
                             </div>
-                            <div class="process-content flex-1 bg-gray-50 p-6 rounded-xl opacity-0">
+                            <div class="process-content flex-1 bg-gray-50 p-6 rounded-xl">
                                 <h3 class="text-2xl font-bold mb-2 text-gray-800">Final delivery + post-launch support</h3>
                                 <p class="text-gray-600">Handing over your website with ongoing support and maintenance.</p>
                             </div>
@@ -754,7 +964,7 @@
                                 </div>
                                 <div>
                                     <h3 class="font-bold text-gray-800 mb-1">Email</h3>
-                                    <a href="mailto:ilyas99352@gmail.com" class="text-purple-600 hover:underline">ilyas99352@gmail.com</a>
+                                    <a href="mailto:ilyas99352@gmail.com?subject=Portfolio Inquiry" target="_blank" rel="noopener noreferrer" class="text-purple-600 hover:underline">ilyas99352@gmail.com</a>
                                 </div>
                             </div>
                         </div>
@@ -766,7 +976,7 @@
                                 </div>
                                 <div>
                                     <h3 class="font-bold text-gray-800 mb-1">WhatsApp</h3>
-                                    <a href="https://wa.me/923112469935" target="_blank" class="text-green-600 hover:underline">03112469935</a>
+                                    <a href="https://wa.me/923112469935" target="_blank" rel="noopener noreferrer" class="text-green-600 hover:underline">+92 311 2469935</a>
                                 </div>
                             </div>
                         </div>
@@ -793,7 +1003,7 @@
                 
                 <!-- WhatsApp Button -->
                 <div class="text-center">
-                    <a href="https://wa.me/923112469935" target="_blank" class="inline-flex items-center space-x-3 px-8 py-4 bg-green-500 text-white rounded-full font-semibold hover:bg-green-600 shadow-lg hover:shadow-xl transition-all">
+                    <a href="https://wa.me/923112469935?text=Hi%20Ilyas,%20I%20would%20like%20to%20discuss%20a%20project%20with%20you." target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-3 px-8 py-4 bg-green-500 text-white rounded-full font-semibold hover:bg-green-600 shadow-lg hover:shadow-xl transition-all">
                         <i class="fab fa-whatsapp text-2xl"></i>
                         <span>Chat on WhatsApp</span>
                     </a>
@@ -827,8 +1037,16 @@
                 <div>
                     <h4 class="text-lg font-bold mb-4">Contact</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><i class="fas fa-envelope mr-2"></i> ilyas99352@gmail.com</li>
-                        <li><i class="fab fa-whatsapp mr-2"></i> 03112469935</li>
+                        <li>
+                            <a href="mailto:ilyas99352@gmail.com?subject=Portfolio Inquiry" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition-colors">
+                                <i class="fas fa-envelope mr-2"></i> ilyas99352@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/923112469935?text=Hi%20Ilyas,%20I%20would%20like%20to%20discuss%20a%20project%20with%20you." target="_blank" rel="noopener noreferrer" class="hover:text-green-400 transition-colors">
+                                <i class="fab fa-whatsapp mr-2"></i> +92 311 2469935
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>

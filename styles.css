@@ -8,6 +8,19 @@
 body {
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+}
+
+/* Prevent horizontal scroll */
+* {
+    max-width: 100%;
+}
+
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Custom Scrollbar */
@@ -90,20 +103,14 @@ nav.scrolled {
 
 .process-number {
     transition: all 0.3s ease;
-    /* Initial state - will be animated by GSAP */
 }
 
 .process-content {
-    transform: translateX(-20px);
     transition: all 0.3s ease;
-    /* Initial state - will be animated by GSAP */
 }
 
 .process-line {
-    transform-origin: top;
     transition: all 0.3s ease;
-    height: 0;
-    /* Initial state - will be animated by GSAP */
 }
 
 /* Process Step Connector Line - Removed old style, using new process-line class */
@@ -157,24 +164,323 @@ textarea:focus {
     border-color: #9333ea;
 }
 
+/* Hero Section Spacing Optimization */
+#home {
+    padding-top: 5rem;
+}
+
+@media (max-width: 768px) {
+    #home {
+        min-height: 80vh !important;
+        padding-top: 4rem;
+    }
+}
+
+/* About Section Text Visibility */
+#about {
+    background: white;
+}
+
+/* Ensure About section is always visible */
+.about-content,
+.about-image {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+}
+
+/* Override any GSAP initial states */
+.about-content *,
+.about-image * {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+#about .about-content p {
+    color: #1f2937 !important;
+    font-weight: 400;
+    opacity: 1 !important;
+}
+
+#about .about-content strong {
+    color: #9333ea !important;
+    font-weight: 700;
+    opacity: 1 !important;
+}
+
+#about h2 {
+    color: #111827 !important;
+    opacity: 1 !important;
+}
+
+#about h3 {
+    color: #111827 !important;
+    opacity: 1 !important;
+}
+
+#about .stat-card div {
+    color: #1f2937 !important;
+    opacity: 1 !important;
+}
+
+#about .stat-card {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Mobile Responsive Fixes */
+@media (max-width: 768px) {
+    /* Prevent horizontal overflow */
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    /* Container padding */
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    /* Section spacing */
+    section {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    
+    /* Navigation */
+    nav {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    /* Hero section */
+    #home {
+        padding-top: 4rem !important;
+        min-height: 80vh !important;
+    }
+    
+    /* Section headers */
+    .flex.items-center.justify-center {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .flex.items-center.justify-center i.fas {
+        font-size: 2.5rem !important;
+        margin-right: 0 !important;
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Portfolio filters */
+    .flex.flex-wrap.justify-center {
+        gap: 0.5rem;
+    }
+    
+    .filter-btn {
+        padding: 0.5rem 1rem !important;
+        font-size: 0.875rem !important;
+    }
+    
+    /* Service cards */
+    .service-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Portfolio items */
+    .portfolio-item {
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Pricing cards */
+    .pricing-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Process steps */
+    .process-step {
+        flex-direction: column !important;
+        text-align: center;
+    }
+    
+    .process-content {
+        margin-top: 1rem;
+        width: 100%;
+    }
+    
+    /* Contact form */
+    .grid.md\\:grid-cols-2 {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+    
+    /* Testimonials */
+    .grid.md\\:grid-cols-3 {
+        grid-template-columns: 1fr !important;
+    }
+}
+
 /* Responsive Typography */
 @media (max-width: 640px) {
     h1 {
-        font-size: 2.5rem;
+        font-size: 1.75rem !important;
+        line-height: 1.2;
     }
     
     h2 {
-        font-size: 2rem;
+        font-size: 1.5rem !important;
+        line-height: 1.3;
+    }
+    
+    h3 {
+        font-size: 1.25rem !important;
     }
     
     /* Section header icons responsive */
     .flex.items-center.justify-center i.fas {
-        font-size: 2.5rem !important;
-        margin-right: 0.5rem !important;
+        font-size: 2rem !important;
+        margin-right: 0 !important;
+        margin-bottom: 0.5rem;
     }
     
     .flex.items-center.justify-center h2 {
+        font-size: 1.25rem !important;
+        text-align: center;
+    }
+    
+    /* Feature Badge Icons - Proper Size */
+    .feature-badge i {
+        font-size: 2.5rem !important;
+        display: block !important;
+        margin-bottom: 0.5rem !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+    
+    /* Reduce feature badge padding on mobile */
+    @media (max-width: 640px) {
+        .feature-badge {
+            padding: 0.75rem !important;
+        }
+        
+        .feature-badge i {
+            font-size: 2rem !important;
+            margin-bottom: 0.5rem !important;
+        }
+        
+        .feature-badge p {
+            font-size: 0.75rem !important;
+        }
+    }
+    
+    /* Text sizes */
+    p {
+        font-size: 0.875rem;
+        line-height: 1.6;
+    }
+    
+    /* Buttons */
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        text-align: center;
+        padding: 0.75rem 1.5rem !important;
+        font-size: 0.875rem !important;
+    }
+    
+    /* Service card text */
+    .service-card h3 {
+        font-size: 1.125rem !important;
+    }
+    
+    .service-card p {
+        font-size: 0.875rem !important;
+    }
+    
+    /* Portfolio item text */
+    .portfolio-item h3 {
+        font-size: 1.125rem !important;
+    }
+    
+    .portfolio-item p {
+        font-size: 0.875rem !important;
+    }
+    
+    /* Stats */
+    .stat-card {
+        padding: 1rem !important;
+    }
+    
+    .stat-card .text-4xl {
         font-size: 1.75rem !important;
+    }
+    
+    .stat-card .text-gray-600 {
+        font-size: 0.75rem !important;
+    }
+    
+    /* About section grid */
+    .grid.md\\:grid-cols-2 {
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+    }
+    
+    /* About stats grid - keep 2 columns on mobile */
+    .about-image .grid.grid-cols-2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+    
+    /* Process numbers */
+    .process-number {
+        width: 3.5rem !important;
+        height: 3.5rem !important;
+        font-size: 1.25rem !important;
+    }
+    
+    /* Why work with me grid */
+    .grid.lg\\:grid-cols-4 {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1rem;
+    }
+    
+    /* Footer */
+    .grid.md\\:grid-cols-3 {
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    /* Even smaller text */
+    h1 {
+        font-size: 1.5rem !important;
+    }
+    
+    h2 {
+        font-size: 1.25rem !important;
+    }
+    
+    /* Container padding */
+    .container {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+    
+    /* Feature badges - single column */
+    .grid.grid-cols-2 {
+        grid-template-columns: 1fr !important;
+    }
+    
+    /* Why work with me - single column */
+    .grid.lg\\:grid-cols-4 {
+        grid-template-columns: 1fr !important;
+    }
+    
+    /* Stats - single column */
+    .grid.grid-cols-2 {
+        grid-template-columns: 1fr !important;
     }
 }
 
@@ -197,14 +503,55 @@ button {
     pointer-events: none;
 }
 
+/* Portfolio Item Link Styling */
+.portfolio-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+.portfolio-item a:hover {
+    text-decoration: none;
+}
+
+.portfolio-item:hover .fa-external-link-alt {
+    transform: translateX(4px);
+    transition: transform 0.3s ease;
+}
+
 /* Counter Animation */
 .counter {
     transition: all 0.3s ease;
 }
 
+/* Feature Badge - Always Visible - CRITICAL FIX */
+.feature-badge {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+    display: block !important;
+}
+
+.feature-badge * {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.feature-badge i {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.feature-badge p {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+}
+
 /* Feature Badge Hover */
 .feature-badge:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) !important;
 }
 
 /* Testimonial Card Hover */
@@ -227,5 +574,81 @@ button {
     padding: 1rem;
     border-radius: 0.5rem;
     margin-top: 1rem;
+}
+
+/* Additional Mobile Fixes */
+@media (max-width: 768px) {
+    /* About section stats */
+    .grid.grid-cols-2 {
+        gap: 0.75rem;
+    }
+    
+    /* Service cards spacing */
+    .grid.md\\:grid-cols-2.lg\\:grid-cols-3 {
+        gap: 1.5rem;
+    }
+    
+    /* Portfolio grid */
+    .grid.md\\:grid-cols-2.lg\\:grid-cols-3 {
+        gap: 1.5rem;
+    }
+    
+    /* Pricing grid */
+    .grid.md\\:grid-cols-2.lg\\:grid-cols-4 {
+        gap: 1.5rem;
+    }
+    
+    /* Process steps spacing */
+    .space-y-12 {
+        gap: 2rem;
+    }
+    
+    /* Text wrapping */
+    h1, h2, h3, p {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    /* Long URLs */
+    a {
+        word-break: break-all;
+    }
+    
+    /* Buttons full width on mobile */
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    /* Form inputs */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* Fix for very small screens */
+@media (max-width: 360px) {
+    /* Even smaller padding */
+    .container {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    
+    /* Smaller icons */
+    .feature-badge i {
+        font-size: 1.25rem !important;
+    }
+    
+    /* Smaller process numbers */
+    .process-number {
+        width: 3rem !important;
+        height: 3rem !important;
+        font-size: 1rem !important;
+    }
 }
 

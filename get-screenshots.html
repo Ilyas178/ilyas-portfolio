@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Screenshot Generator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #9333ea;
+            margin-bottom: 20px;
+        }
+        .website-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .website-item {
+            padding: 15px;
+            background: #f9fafb;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+        }
+        .website-item h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .website-item a {
+            color: #9333ea;
+            text-decoration: none;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .website-item a:hover {
+            text-decoration: underline;
+        }
+        .screenshot-link {
+            display: inline-block;
+            padding: 8px 15px;
+            background: #9333ea;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        .screenshot-link:hover {
+            background: #7e22ce;
+        }
+        .instructions {
+            background: #fef3c7;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #f59e0b;
+        }
+        .instructions h2 {
+            color: #92400e;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .instructions ol {
+            margin-left: 20px;
+            color: #78350f;
+        }
+        .instructions li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📸 Portfolio Screenshot Generator</h1>
+        
+        <div class="instructions">
+            <h2>How to Get Screenshots:</h2>
+            <ol>
+                <li>Click on "Get Screenshot" button below each website</li>
+                <li>It will open screenshot.guru with the website URL</li>
+                <li>Click "Take Screenshot" on that page</li>
+                <li>Download the image</li>
+                <li>Save it in <code>images/</code> folder with the suggested name</li>
+                <li>Update HTML file with image path</li>
+            </ol>
+        </div>
+
+        <div class="website-list">
+            <div class="website-item">
+                <h3>1. Loyal Tree</h3>
+                <a href="https://loyaltree.ca/" target="_blank">https://loyaltree.ca/</a>
+                <a href="https://screenshot.guru/view/https://loyaltree.ca/" target="_blank" class="screenshot-link">📸 Get Screenshot</a>
+                <p style="font-size: 12px; color: #666; margin-top: 5px;">Save as: <code>loyaltree.jpg</code></p>
+            </div>
+
+            <div class="website-item">
+                <h3>2. LB Car Service</h3>
+                <a href="https://lbcarservice.net/" target="_blank">https://lbcarservice.net/</a>
+                <a href="https://screenshot.guru/view/https://lbcarservice.net/" target="_blank" class="screenshot-link">📸 Get Screenshot</a>
+                <p style="font-size: 12px; color: #666; margin-top: 5px;">Save as: <code>lbcarservice.jpg</code></p>
+            </div>
+
+            <div class="website-item">
+                <h3>3. Hotel La Spezia</h3>
+                <a href="https://hotel-laspezia.it/" target="_blank">https://hotel-laspezia.it/</a>
+                <a href="https://screenshot.guru/view/https://hotel-laspezia.it/" target="_blank" class="screenshot-link">📸 Get Screenshot</a>
+                <p style="font-size: 12px; color: #666; margin-top: 5px;">Save as: <code>hotel-laspezia.jpg</code></p>
+            </div>
+
+            <div class="website-item">
+                <h3>4. Andy Sells Chicago</h3>
+                <a href="https://andysellschicago.com/" target="_blank">https://andysellschicago.com/</a>
+                <a href="https://screenshot.guru/view/https://andysellschicago.com/" target="_blank" class="screenshot-link">📸 Get Screenshot</a>
+                <p style="font-size: 12px; color: #666; margin-top: 5px;">Save as: <code>andysellschicago.jpg</code></p>
+            </div>
+
+            <div class="website-item">
+                <h3>5. Koi Wellness Solutions</h3>
+                <a href="https://koiwellnesssolutions.com/" target="_blank">https://koiwellnesssolutions.com/</a>
+                <a href="https://screenshot.guru/view/https://koiwellnesssolutions.com/" target="_blank" class="screenshot-link">📸 Get Screenshot</a>
+                <p style="font-size: 12px; color: #666; margin-top: 5px;">Save as: <code>koiwellness.jpg</code></p>
+            </div>
+
+            <div class="website-item">
+                <h3>6. Corporation Capital</h3>
+                <a href="https://corporationcapital.co.uk/" target="_blank">https://corporationcapital.co.uk/</a>
+                <a href="https://screenshot.guru/view/https://corporationcapital.co.uk/" target="_blank" class="screenshot-link">📸 Get Screenshot</a>
+                <p style="font-size: 12px; color: #666; margin-top: 5px;">Save as: <code>corporationcapital.jpg</code></p>
+            </div>
+
+            <div class="website-item">
+                <h3>7. Capiwise</h3>
+                <a href="https://capiwise.com/" target="_blank">https://capiwise.com/</a>
+                <a href="https://screenshot.guru/view/https://capiwise.com/" target="_blank" class="screenshot-link">📸 Get Screenshot</a>
+                <p style="font-size: 12px; color: #666; margin-top: 5px;">Save as: <code>capiwise.jpg</code></p>
+            </div>
+
+            <div class="website-item">
+                <h3>8. Nexus Medical Solutions</h3>
+                <a href="https://nexusmedicalsolutions.net/" target="_blank">https://nexusmedicalsolutions.net/</a>
+                <a href="https://screenshot.guru/view/https://nexusmedicalsolutions.net/" target="_blank" class="screenshot-link">📸 Get Screenshot</a>
+                <p style="font-size: 12px; color: #666; margin-top: 5px;">Save as: <code>nexusmedical.jpg</code></p>
+            </div>
+
+            <div class="website-item">
+                <h3>9. The Home Organizers</h3>
+                <a href="https://thehomeorganizers.ca/" target="_blank">https://thehomeorganizers.ca/</a>
+                <a href="https://screenshot.guru/view/https://thehomeorganizers.ca/" target="_blank" class="screenshot-link">📸 Get Screenshot</a>
+                <p style="font-size: 12px; color: #666; margin-top: 5px;">Save as: <code>homeorganizers.jpg</code></p>
+            </div>
+
+            <div class="website-item">
+                <h3>10. Stonemate</h3>
+                <a href="https://stonemate.co/" target="_blank">https://stonemate.co/</a>
+                <a href="https://screenshot.guru/view/https://stonemate.co/" target="_blank" class="screenshot-link">📸 Get Screenshot</a>
+                <p style="font-size: 12px; color: #666; margin-top: 5px;">Save as: <code>stonemate.jpg</code></p>
+            </div>
+
+            <div class="website-item">
+                <h3>11. Casablanca Odense</h3>
+                <a href="https://www.casablancaodense.dk/newdesign/" target="_blank">https://www.casablancaodense.dk/newdesign/</a>
+                <a href="https://screenshot.guru/view/https://www.casablancaodense.dk/newdesign/" target="_blank" class="screenshot-link">📸 Get Screenshot</a>
+                <p style="font-size: 12px; color: #666; margin-top: 5px;">Save as: <code>casablanca.jpg</code></p>
+            </div>
+
+            <div class="website-item">
+                <h3>12. Smart Alozie</h3>
+                <a href="https://smart-alozie.netlify.app/" target="_blank">https://smart-alozie.netlify.app/</a>
+                <a href="https://screenshot.guru/view/https://smart-alozie.netlify.app/" target="_blank" class="screenshot-link">📸 Get Screenshot</a>
+                <p style="font-size: 12px; color: #666; margin-top: 5px;">Save as: <code>smatalozie.jpg</code></p>
+            </div>
+        </div>
+
+        <div style="margin-top: 30px; padding: 20px; background: #f0f9ff; border-radius: 8px;">
+            <h2 style="color: #0369a1; margin-bottom: 10px;">📁 Next Steps:</h2>
+            <ol style="margin-left: 20px; color: #0c4a6e;">
+                <li>Create <code>images</code> folder in your project</li>
+                <li>Download all screenshots using the links above</li>
+                <li>Save them in <code>images/</code> folder with suggested names</li>
+                <li>Update <code>index.html</code> - uncomment image tags and comment out icons</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
+

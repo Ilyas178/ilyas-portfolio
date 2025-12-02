@@ -103,25 +103,50 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         if (featureBadges.length > 0) {
-            gsap.from(featureBadges, {
-                duration: 0.8,
-                y: 30,
-                opacity: 0,
-                delay: 0.6,
-                stagger: 0.1,
-                ease: 'power3.out'
+            // IMMEDIATELY make badges visible - CRITICAL FIX
+            featureBadges.forEach(badge => {
+                badge.style.opacity = '1';
+                badge.style.visibility = 'visible';
+                badge.style.transform = 'translateY(0)';
             });
+            
+            // Also set via GSAP
+            gsap.set(featureBadges, { 
+                opacity: 1, 
+                y: 0, 
+                visibility: 'visible',
+                clearProps: 'all',
+                immediateRender: true
+            });
+            
+            // Remove any inline styles that might hide them
+            setTimeout(() => {
+                featureBadges.forEach(badge => {
+                    if (badge.style.opacity === '0') {
+                        badge.style.opacity = '1';
+                    }
+                    if (badge.style.visibility === 'hidden') {
+                        badge.style.visibility = 'visible';
+                    }
+                });
+            }, 50);
         }
 
         if (heroButtons.length > 0) {
-            gsap.from(heroButtons, {
-                duration: 0.8,
-                y: 20,
-                opacity: 0,
-                delay: 1,
-                stagger: 0.1,
-                ease: 'power3.out'
-            });
+            // Ensure visible first
+            gsap.set(heroButtons, { opacity: 1, y: 0 });
+            // Quick fade in
+            gsap.fromTo(heroButtons,
+                { opacity: 0, y: 10 },
+                {
+                    duration: 0.6,
+                    y: 0,
+                    opacity: 1,
+                    delay: 0.4,
+                    stagger: 0.1,
+                    ease: 'power2.out'
+                }
+            );
         }
     }
 
@@ -163,7 +188,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             }
 
-            // Professional Sequential Process Animation
+            // Simple Fade In Animation for Process Section
             const processSection = document.querySelector('#process');
             if (processSection && typeof ScrollTrigger !== 'undefined') {
                 const processSteps = document.querySelectorAll('.process-step');
@@ -172,87 +197,54 @@ document.addEventListener('DOMContentLoaded', function() {
                 const processLines = document.querySelectorAll('.process-line');
                 
                 if (processSteps.length > 0) {
-                    // Set initial states
+                    // Set initial states - all elements start invisible
                     gsap.set(processNumbers, {
-                        scale: 0,
                         opacity: 0
                     });
                     
                     gsap.set(processContents, {
-                        opacity: 0,
-                        x: -30
+                        opacity: 0
                     });
                     
                     gsap.set(processLines, {
-                        opacity: 0,
-                        height: 0
+                        opacity: 0
                     });
                     
-                    // Create a master timeline for sequential animation
-                    const processTimeline = gsap.timeline({
+                    // Simple fade in animation for all elements together
+                    gsap.to(processNumbers, {
                         scrollTrigger: {
                             trigger: processSection,
                             start: 'top 70%',
                             toggleActions: 'play none none none'
-                        }
+                        },
+                        duration: 0.8,
+                        opacity: 1,
+                        stagger: 0.1,
+                        ease: 'power2.out'
                     });
                     
-                    // Animate each step sequentially
-                    processSteps.forEach((step, index) => {
-                        const number = processNumbers[index];
-                        const content = processContents[index];
-                        const line = index < processLines.length ? processLines[index] : null;
-                        
-                        // Step 1 - Immediate animation
-                        if (index === 0) {
-                            // Animate number circle with bounce
-                            processTimeline.to(number, {
-                                duration: 0.7,
-                                scale: 1,
-                                opacity: 1,
-                                ease: 'back.out(1.7)'
-                            })
-                            // Animate content slide in
-                            .to(content, {
-                                duration: 0.7,
-                                opacity: 1,
-                                x: 0,
-                                ease: 'power3.out'
-                            }, '-=0.4')
-                            // Animate connecting line (if exists)
-                            .to(line, {
-                                duration: 0.6,
-                                opacity: 1,
-                                height: '48px',
-                                ease: 'power2.out'
-                            }, '-=0.3');
-                        } else {
-                            // Subsequent steps - sequential animation with delay
-                            // Animate connecting line first (grows downward)
-                            if (line) {
-                                processTimeline.to(line, {
-                                    duration: 0.6,
-                                    opacity: 1,
-                                    height: '48px',
-                                    ease: 'power2.out'
-                                });
-                            }
-                            
-                            // Animate number circle with bounce effect
-                            processTimeline.to(number, {
-                                duration: 0.7,
-                                scale: 1,
-                                opacity: 1,
-                                ease: 'back.out(1.7)'
-                            })
-                            // Animate content slide in
-                            .to(content, {
-                                duration: 0.7,
-                                opacity: 1,
-                                x: 0,
-                                ease: 'power3.out'
-                            }, '-=0.4');
-                        }
+                    gsap.to(processContents, {
+                        scrollTrigger: {
+                            trigger: processSection,
+                            start: 'top 70%',
+                            toggleActions: 'play none none none'
+                        },
+                        duration: 0.8,
+                        opacity: 1,
+                        stagger: 0.1,
+                        ease: 'power2.out'
+                    });
+                    
+                    gsap.to(processLines, {
+                        scrollTrigger: {
+                            trigger: processSection,
+                            start: 'top 70%',
+                            toggleActions: 'play none none none'
+                        },
+                        duration: 0.6,
+                        opacity: 1,
+                        stagger: 0.1,
+                        ease: 'power2.out'
                     });
                 }
             }
@@ -275,37 +267,64 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             }
 
-            // About Section Animation
+            // About Section Animation - Removed to prevent hiding
+            // Elements will be visible by default, no animation that hides them
             const aboutContent = document.querySelector('.about-content');
             const aboutImage = document.querySelector('.about-image');
             const aboutSection = document.querySelector('#about');
 
-            if (aboutContent && aboutSection) {
-                gsap.from(aboutContent, {
-                    scrollTrigger: {
-                        trigger: aboutSection,
-                        start: 'top 70%',
-                        toggleActions: 'play none none none'
-                    },
-                    duration: 1,
-                    x: -50,
-                    opacity: 0,
-                    ease: 'power3.out'
-                });
+            // Always ensure elements are visible
+            if (aboutContent) {
+                gsap.set(aboutContent, { opacity: 1, x: 0, visibility: 'visible', display: 'block' });
             }
-
-            if (aboutImage && aboutSection) {
-                gsap.from(aboutImage, {
-                    scrollTrigger: {
-                        trigger: aboutSection,
-                        start: 'top 70%',
-                        toggleActions: 'play none none none'
-                    },
-                    duration: 1,
-                    x: 50,
-                    opacity: 0,
-                    ease: 'power3.out'
-                });
+            if (aboutImage) {
+                gsap.set(aboutImage, { opacity: 1, x: 0, visibility: 'visible', display: 'block' });
+            }
+            
+            // Optional: Add subtle animation only if section is already in view
+            if (aboutContent && aboutImage && aboutSection && typeof ScrollTrigger !== 'undefined') {
+                // Check if section is already visible on load
+                const rect = aboutSection.getBoundingClientRect();
+                const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+                
+                if (!isVisible) {
+                    // Only animate if section is not yet visible
+                    gsap.fromTo(aboutContent, 
+                        { opacity: 0, x: -30 },
+                        {
+                            scrollTrigger: {
+                                trigger: aboutSection,
+                                start: 'top 80%',
+                                toggleActions: 'play none none none',
+                                once: true
+                            },
+                            duration: 0.8,
+                            x: 0,
+                            opacity: 1,
+                            ease: 'power3.out'
+                        }
+                    );
+                    
+                    gsap.fromTo(aboutImage,
+                        { opacity: 0, x: 30 },
+                        {
+                            scrollTrigger: {
+                                trigger: aboutSection,
+                                start: 'top 80%',
+                                toggleActions: 'play none none none',
+                                once: true
+                            },
+                            duration: 0.8,
+                            x: 0,
+                            opacity: 1,
+                            ease: 'power3.out'
+                        }
+                    );
+                } else {
+                    // Section already visible, ensure it stays visible
+                    gsap.set(aboutContent, { opacity: 1, x: 0 });
+                    gsap.set(aboutImage, { opacity: 1, x: 0 });
+                }
             }
 
             const statCards = document.querySelectorAll('.stat-card');
