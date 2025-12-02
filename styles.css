@@ -1,0 +1,231 @@
+/* Custom Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #9333ea, #3b82f6);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #7e22ce, #2563eb);
+}
+
+/* Navbar Scroll Effect */
+nav.scrolled {
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth Animations */
+.service-card,
+.portfolio-item,
+.pricing-card {
+    transition: all 0.3s ease;
+}
+
+/* Gradient Animation */
+@keyframes gradient {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+.animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+}
+
+/* Filter Button Active State */
+.filter-btn.active {
+    background: linear-gradient(to right, #9333ea, #3b82f6);
+    color: white;
+}
+
+/* Pricing Card Popular Badge */
+.pricing-card {
+    position: relative;
+    overflow: visible;
+}
+
+/* Mobile Menu Animation */
+#mobile-menu {
+    transition: all 0.3s ease;
+}
+
+/* Back to Top Button */
+#back-to-top {
+    transition: all 0.3s ease;
+}
+
+#back-to-top.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* Process Step Styling */
+.process-step {
+    position: relative;
+}
+
+.process-number {
+    transition: all 0.3s ease;
+    /* Initial state - will be animated by GSAP */
+}
+
+.process-content {
+    transform: translateX(-20px);
+    transition: all 0.3s ease;
+    /* Initial state - will be animated by GSAP */
+}
+
+.process-line {
+    transform-origin: top;
+    transition: all 0.3s ease;
+    height: 0;
+    /* Initial state - will be animated by GSAP */
+}
+
+/* Process Step Connector Line - Removed old style, using new process-line class */
+.process-timeline {
+    position: relative;
+}
+
+/* Hover effect on process steps */
+.process-step:hover .process-number {
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(147, 51, 234, 0.4);
+}
+
+.process-step:hover .process-content {
+    transform: translateX(0);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effects */
+.btn-primary:hover,
+.btn-secondary:hover {
+    transform: translateY(-2px);
+}
+
+/* Loading Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Text Selection */
+::selection {
+    background: #9333ea;
+    color: white;
+}
+
+/* Focus States */
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #9333ea;
+}
+
+/* Responsive Typography */
+@media (max-width: 640px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    /* Section header icons responsive */
+    .flex.items-center.justify-center i.fas {
+        font-size: 2.5rem !important;
+        margin-right: 0.5rem !important;
+    }
+    
+    .flex.items-center.justify-center h2 {
+        font-size: 1.75rem !important;
+    }
+}
+
+/* Smooth Transitions */
+a,
+button {
+    transition: all 0.3s ease;
+}
+
+/* Portfolio Filter Animation */
+.portfolio-item {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.3s ease;
+}
+
+.portfolio-item.hidden {
+    opacity: 0;
+    transform: scale(0.9);
+    pointer-events: none;
+}
+
+/* Counter Animation */
+.counter {
+    transition: all 0.3s ease;
+}
+
+/* Feature Badge Hover */
+.feature-badge:hover {
+    transform: translateY(-5px);
+}
+
+/* Testimonial Card Hover */
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact Form Success/Error States */
+.form-success {
+    background: #10b981;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+.form-error {
+    background: #ef4444;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
